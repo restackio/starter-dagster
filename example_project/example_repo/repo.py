@@ -75,4 +75,4 @@ example_job = example_graph.to_job(
 
 @repository
 def example_repo():
-    return [example_job, pod_per_op_job, pod_per_op_celery_job]
+    return [example_job]
