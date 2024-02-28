@@ -1,11 +1,11 @@
 FROM python:3.10-slim
 
-ARG DAGSTER_VERSION=1.4.3
+ARG RESTACK_PRODUCT_VERSION=1.6.6
 
 # All packages are hard-pinned to `dagster`, so setting the version on just `DAGSTER` will ensure
 # compatible versions.
 RUN pip install \
-    dagster==${DAGSTER_VERSION} \
+    dagster==${RESTACK_PRODUCT_VERSION} \
     dagster-postgres \
     dagster-aws \
     dagster-k8s \
