@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 
-ARG RESTACK_PRODUCT_VERSION=1.6.6
+ARG RESTACK_PRODUCT_VERSION=1.6.13
 
 # All packages are hard-pinned to `dagster`, so setting the version on just `DAGSTER` will ensure
 # compatible versions.
